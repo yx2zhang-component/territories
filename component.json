@@ -1,0 +1,14 @@
+{
+  "name": "territories",
+  "repo": "yx2zhang/territories",
+  "description": "iso 3166 countries codes with continent",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
