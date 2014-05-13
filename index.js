@@ -1,6 +1,6 @@
 
 var countryContinent =  require("country-continent");
-var countryNames = require("./country-code");
+var countryNames = require("country-code");
 var _ = require("underscore");
 
 var territory = {}
