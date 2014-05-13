@@ -42,9 +42,31 @@ territory.getAll = function(){
   return countries;
 };
 
-territory.getByContinent = function(){
+territory.groupByContinent = function(){
   var result = _.groupBy(countries, function(c){
     return c.continent_code;
+  });
+
+  result = _.map(result, function(countries, continent_code){
+    var nameMap = {
+      AF: "Africa",
+      AS: "Asia",
+      EU: "Europe",
+      NA: "North America",
+      SA: "South America",
+      OC: "Oceania",
+      AN: "Antarctica"
+    };
+
+    var continent_name = nameMap[continent_code];
+
+    var continent = {
+      continent_code: continent_code,
+      continent_name: continent_name,
+      countries: countries
+    }
+
+    return continent;
   });
 
   return result;
