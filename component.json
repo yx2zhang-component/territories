@@ -4,7 +4,9 @@
   "description": "iso 3166 countries codes with continent",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "component/underscore": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",

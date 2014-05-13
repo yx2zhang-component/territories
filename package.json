@@ -1,0 +1,20 @@
+{
+  "name": "component-territories",
+  "description": "iso 3166 countries codes with continent",
+  "keywords": ["country code","territory","iso-3116"],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yx2zhang-component/territory.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*",
+    "underscore": "*"
+  }
+}
