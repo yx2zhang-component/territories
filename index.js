@@ -1,3 +1,4 @@
+
 var countryContinent =  require("./country_continent.js");
 var countryNames = require("./country_en.js");
 var _ = require("underscore");
@@ -7,11 +8,16 @@ var countries = {}
 
 var getNameFromCode = function(opts){
   var code = opts.code;
+  var name = "N/A";
+
   country = _.find(countryNames, function(country){
-    return country.country_code = code;
+    return country.country_code == code;
   });
 
-  var name = country.country_name || "N/A";
+  if(country){
+    name = country.country_name;
+  }
+
   return name;
 };
 

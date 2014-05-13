@@ -172,7 +172,6 @@ module.exports = [
   {"country_code":"NR","continent_code":"OC"},
   {"country_code":"NU","continent_code":"OC"},
   {"country_code":"NZ","continent_code":"OC"},
-  {"country_code":"O1","continent_code":"--"},
   {"country_code":"OM","continent_code":"AS"},
   {"country_code":"PA","continent_code":"NA"},
   {"country_code":"PE","continent_code":"SA"},
