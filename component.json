@@ -2,7 +2,7 @@
   "name": "territories",
   "repo": "yx2zhang-component/territories",
   "description": "iso 3166 countries codes with continent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [],
   "dependencies": {
     "component/underscore": "*"
@@ -11,6 +11,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js"
+    "index.js",
+    "country_continent.js",
+    "country_en.js"
   ]
 }

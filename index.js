@@ -47,7 +47,7 @@ territory.groupByContinent = function(){
     return c.continent_code;
   });
 
-  result = _.map(result, function(countries, continent_code){
+  result = _.map(result, function(territories, continent_code){
     var nameMap = {
       AF: "Africa",
       AS: "Asia",
@@ -63,7 +63,7 @@ territory.groupByContinent = function(){
     var continent = {
       continent_code: continent_code,
       continent_name: continent_name,
-      countries: countries
+      territories: territories
     }
 
     return continent;
