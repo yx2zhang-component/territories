@@ -5,14 +5,14 @@
   "version": "0.0.2",
   "keywords": [],
   "dependencies": {
-    "component/underscore": "*"
-    "yx2zhang-component/country-code": "*"
+    "component/underscore": "*",
+    "yx2zhang-component/country-code": "*",
     "yx2zhang-component/country-continent": "*"
   },
   "development": {},
   "license": "MIT",
   "main": "index.js",
   "scripts": [
-    "index.js",
+    "index.js"
   ]
 }
