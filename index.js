@@ -21,7 +21,12 @@ var getNameFromCode = function(opts){
   return name;
 };
 
-var joint = function(){
+var filter = function(countries){
+  var result = _.reject(countries, function(c){ return c.name == "N/A"});
+  return result;
+}
+
+var getTerritories = function(){
   var countries = _.map(countryContinent, function(c){
     var result = {
       code: c.country_code,
@@ -32,17 +37,14 @@ var joint = function(){
     return result;
   });
 
+  countries = filter(countries);
   return countries;
 };
 
-countries = joint();
 
+territory.getGroupByContinent = function(opts){
+  var countries = getTerritories()
 
-territory.getAll = function(){
-  return countries;
-};
-
-territory.groupByContinent = function(){
   var result = _.groupBy(countries, function(c){
     return c.continent_code;
   });
