@@ -5,7 +5,7 @@
   "version": "0.0.2",
   "keywords": [],
   "dependencies": {
-    "component/underscore": "*",
+    "components/underscore": "*",
     "yx2zhang-component/country-code": "*",
     "yx2zhang-component/country-continent": "*"
   },
